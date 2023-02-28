@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+
+:root {
+    --cor01: #9FC3AA;
+    --cor02: #CDE2E8;
+    --cor03: #78A633;
+    --cor04: #A9D943;
+    --cor05: #617322;
+
+    --font-padrão: Arial, Helvetica, sans-serif
+}
+
+* {
+    font-family: var(--font-padrão);
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    position: relative;
+    background-color: var(--cor01);
+}
+
+section#janela {
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    width: 280px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.35);
+}
+
+div#fundo {
+    height: 250px;
+    width: 100%;
+    background: url(../imagens/palmas-full.jpg) center center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+div#conteudo {
+    padding: 0px 10px;
+}
+
+div#conteudo > h1 {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 1.7em;
+}
+
+div#conteudo > p {
+    font-size: 0.8em;
+}
+
+.input-container {
+    display: flex;
+    height: 35px;
+    background-color: var(--cor05);
+    margin: 5px 0px;
+    padding: 3px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.input-container > input {
+    background-color: var(--cor02);
+    border: none;
+    height: 90%;
+    width: 90%;
+    border-radius: 8px;
+    padding-left: 5px;
+    font-size: 1em;
+}
+
+.input-container > input:focus {
+    background-color: white;
+    outline: none;
+}
+
+.btn {
+    height: 40px;
+    display: block;
+    width: 100%;
+    font-size: 0.9em;
+    border-radius: 10px;
+}
+
+input#entrar {
+    background-color: var(--cor03);
+    margin-bottom: 8px;
+    border: none;
+    color: white;
+}
+
+input#esqueci-senha {
+    background-color: white;
+    border: 1px solid var(--cor03);
+    margin-bottom: 30px;
+}
+
+input#entrar:hover {
+    background-color: #4f6d22;
+}
+
+input#esqueci-senha:hover {
+    background-color: var(--cor04);
+}

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--cor01), var(--cor05));
+    }
+
+    section#janela {
+        height: 300px;
+        width: 80%;
+        display: flex;
+    }
+
+    div#fundo{
+        width: 50%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+        background-position: bottom right;
+    }
+
+}
+
+@media screen and (min-width: 993px){
+    body {
+        background-image: linear-gradient(to bottom, var(--cor01), var(--cor05));
+    }
+
+    section#janela {
+        height: 350px;
+        width: 900px;
+        display: flex;
+    }
+
+    div#fundo{
+        display: inline;
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+        background-position: bottom right;
+        order: 2;
+    }
+
+    div#conteudo > h1 {
+        font-size: 1.9em;
+        margin: 15px 0px;
+    }
+
+    div#conteudo > p {
+        font-size: 1em;
+        margin: 15px;
+    }
+
+    .input-container > input {
+        width: 96%;
+    }
+
+    
+}
+
+}

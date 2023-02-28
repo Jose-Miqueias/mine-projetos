@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+</head>
+<body>
+    <section id="janela">
+        <div id="fundo"></div>
+        <div id="conteudo">
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <form action="cadastro.php" autocomplete="on" method="post">
+                <div class="input-container">
+                    <span class="material-symbols-outlined">person</span>
+                    <input type="email" name="email" id="idemail" placeholder="Seu email" required>
+                </div>
+
+
+                <div class="input-container">
+                    <span class="material-symbols-outlined">vpn_key</span>
+                    <input type="password" name="senha" id="idsenha" placeholder="Sua senha" required>
+                </div>
+
+                <input class="btn" id="entrar" type="submit" value="Entrar">
+                <input class="btn" id="esqueci-senha" type="submit" value="Esqueci a senha">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

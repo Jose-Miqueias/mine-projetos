@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 950px){
+    body {
+        position: relative;
+        display: block;
+        background-image: url("../imagens/night-desert-pc.jpg");
+    }
+
+    main {
+        position: absolute;
+        width: 900px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.352);
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease;
+    }
+
+    main > h1 {
+        color: #352224;
+    }
+
+    main > p#boas-vindas {
+        max-width: 523px;
+    }
+
+    main > a#entrar {
+        width: 500px;
+        background-color: #73371b;
+    }
+
+    main > a#cadastrar {
+        color: black;
+    }
+
+    p#footer {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1700px){
+    body{
+        background-size: contain; 
+    }
+
+    main{
+        width: 1000px;
+        height: 600px;
+    }
+}
