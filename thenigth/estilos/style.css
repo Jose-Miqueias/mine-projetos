@@ -14,7 +14,8 @@ html, body {
 
 body {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     background: url(../imagens/night-desert.jpg) no-repeat fixed;
     background-position: center center;
     background-size: cover;
@@ -89,7 +90,7 @@ main > a#cadastrar {
     margin-bottom: 35px;
 }
 
-main > p#footer {
+footer > p {
     color: white;
     background-color: #02458d;
     font-size: 0.9rem;

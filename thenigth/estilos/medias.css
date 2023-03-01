@@ -37,8 +37,9 @@
         color: black;
     }
 
-    p#footer {
-        display: none;
+    footer > p {
+        display: block;
+        background-color: #73371b;
     }
 }
 
